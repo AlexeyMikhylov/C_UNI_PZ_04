@@ -220,7 +220,7 @@ int ex1(void)
 int ex2(void)
 {
     FILE* fp;
-    char c, ch;
+    char c;
     char name[] = "ex2.txt";
     fp = fopen(name, "w");
 
@@ -235,7 +235,7 @@ int ex2(void)
 
     fclose(fp);
 
-    (void)getchar();
+    //(void)getchar();
 }
 
 int ex3(void)
@@ -273,7 +273,7 @@ int ex4(void)
     int count = 0;
 
     file4 = fopen(name, "w");
-    fprintf(file4, "abc\ndef\nghj\nklm\nnop\n");
+    fprintf(file4, "abc\ndef\nghj\nklm\nnop\nasasas\n");
     fclose(file4);
 
     file4 = fopen(name, "r");
